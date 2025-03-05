@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carnicería JMR</title>
+    <title>Actividad2C</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -69,11 +69,11 @@
             display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; /* Ajuste fino para que los iconos estén más juntos */
-    padding: 20px; /* Reducimos el padding */
+    gap: 50px; 
+    padding: 20px; 
         }
         .social-icons img {
-    width: 80px; /* Ajustar el tamaño de los iconos */
+    width: 80px; 
     height: 80px;
     margin: 0;
     margin-top: 60px;
@@ -81,12 +81,13 @@
         .contact-form {
     background-color: grey;
     max-width: 62%; 
-    margin:  0 auto; /* Se sube el formulario */
+    margin:  0 auto; 
     position: relative;
     padding: 25px;
-    z-index: 20; /* Asegura que esté encima de la imagen del footer */
+    z-index: 20; 
     margin-top: 120px;
     height: 55vh;
+    flex-wrap: wrap;
 }
 .contact-form label {
     font-weight: bold;
@@ -101,14 +102,14 @@
 .contact-form .form-group {
     display: flex;
     justify-content: space-between;
-    gap: 40px; /* Espacio entre email y teléfono */
+    gap: 40px; 
     width: 93%;
     height: 22vh;
    
 }
 
 .contact-form .form-group div {
-    flex: 1; /* Ambos elementos ocupan el mismo ancho */
+    flex: 1; 
     margin-top: 60px;
     margin-left: 20px;
 }
@@ -136,7 +137,7 @@
     color: white;
     padding: 10px 15px;
     font-size: 12px;
-    border: 2.5px solid white; /* Agrega un borde blanco */
+    border: 2.5px solid white; 
     cursor: pointer;
     display: block;
     margin-top: 10px;
@@ -147,7 +148,7 @@
 
 .footer-image {
     position: relative;
-    margin-top: -100px; /* Se sube la imagen para reducir el espacio vacío */
+    margin-top: -100px;
     width: 100%;
     margin-bottom: -10px;
     
@@ -210,17 +211,21 @@
         </div>
     </section>
     <div class="social-icons">
-        <img src="ejercicio-responsive/facebook.jpg">
-        <img src="ejercicio-responsive/localizacion.jpg">
-        <img src="ejercicio-responsive/google.jpg">
+        <img src="Imagenes 2B/facebook.png">
+        <img src="Imagenes 2B/google-plus.png">
+        <img src="Imagenes 2B/gps.png">
     </div>
 </div>
     <section class="contact-form">
-        <form>
+        <form action="http://www.cursos-diseno.es/mostrar.php">
             <div class="form-group">
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+                    <tr>
+                        <td><label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Introduzca su email" required ></td>
+
+                    </tr>
+                  
                 </div>
                 <div>
                     <label  for="telefono">Teléfono</label>
@@ -229,8 +234,10 @@
             </div>
             <label id="mensaje"  for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
-            <button type="submit">Enviar</button>
+            <button type="submit" input type="hidden"name="destinatario" value="jonzalomateossanchez@gmail.com">Enviar</button>
+            
         </form>
+        
     </section>
 
     <img src="ejercicio-responsive/inferior.jpg"  class="footer-image">
